@@ -42,12 +42,12 @@ const TiTacToe = () => {
         }
     }
     function handleClick(num) {
-        if (cells[num] != '') {
+        if (cells[num] !== '') {
             alert('already Clicked')
             return
         }
         let square = [...cells]
-        if (turn == 'x') {
+        if (turn === 'x') {
             square[num] = 'x'
             setTurn('o')
         } else {
